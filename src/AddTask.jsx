@@ -9,7 +9,8 @@ const AddTask = ({ tasks, setTasks }) => {
     const name = taskNameRef.current.value;
     if (name === "") return;
     setTasks((curTasks) => {
-      return [...curTasks, { id: uuidv4(), name: name, completed: false }];
+      // return [...curTasks, { id: uuidv4(), name: name, completed: false }];
+      return [{ id: uuidv4(), name: name, completed: false }, ...curTasks];
     });
     taskNameRef.current.value = null;
   };
