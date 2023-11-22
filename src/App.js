@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        夏休みの<span>宿題リスト</span>
+        冬休みの<span>宿題リスト</span>
       </h1>
       <div className="body">
         <div className="list">

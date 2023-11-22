@@ -31,12 +31,12 @@ const AddTask = ({ tasks, setTasks }) => {
       </div>
       <div>
         <button className="b1" onClick={handleAddTask}>
-          新規タスクの追加
+          宿題の追加
         </button>
       </div>
       <div>
         <button className="b2" onClick={handleClearTask}>
-          完了タスクの削除
+          チェック済み削除
         </button>
       </div>
     </>
