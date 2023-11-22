@@ -22,7 +22,12 @@ const AddTask = ({ tasks, setTasks }) => {
   return (
     <>
       <div>
-        <input type="text" ref={taskNameRef} placeholder="入力してください" />
+        <input
+          type="text"
+          ref={taskNameRef}
+          placeholder="入力してください"
+          className="task-input"
+        />
       </div>
       <div>
         <button className="b1" onClick={handleAddTask}>

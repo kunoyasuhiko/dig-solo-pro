@@ -37,9 +37,16 @@ function App() {
       <h1>
         夏休みの<span>宿題リスト</span>
       </h1>
-      <AddTask tasks={tasks} setTasks={setTasks} />
-      <div className="scroll">
-        <TaskList tasks={tasks} toggleTask={toggleTask} />
+      <div className="body">
+        <div className="list">
+          <AddTask tasks={tasks} setTasks={setTasks} />
+          <div className="scroll">
+            <TaskList tasks={tasks} toggleTask={toggleTask} />
+          </div>
+        </div>
+        <a className="resizeimage">
+          <img src="summer.png" alt="画像" />
+        </a>
       </div>
       <h4>
         {/* Uncompleted Tasks: {tasks.filter((task) => !task.completed).length} */}
